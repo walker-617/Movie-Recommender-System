@@ -1,0 +1,840 @@
+.background-open {
+    height: 100vh;
+    background: url('./assets/bg2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+}
+
+.background-explore {
+    height: 100vh;
+    background: url('./assets/bg1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: auto;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap !important;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.welcome {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(192, 192, 192);
+}
+
+.name-title {
+    font-size: 80px;
+    font-weight: bold;
+    color: rgb(192, 192, 192);
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5), 0px 0px 30px rgba(0, 0, 0, 1), 0px 0px 40px rgba(0, 0, 0, 1);
+}
+
+.mycard{
+    padding: 25px;
+    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.715);
+    border-radius: 15px;
+}
+
+.description{
+    font-size: 20px;
+    color: rgb(226, 226, 226);
+}
+
+.input{
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+    box-sizing: border-box;       
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: rgb(192, 192, 192);
+    border-bottom: 2px solid rgb(192, 192, 192);
+}
+
+.input:focus{
+    color: rgb(1, 1, 1);
+    background-color: rgb(192, 192, 192);
+    border-radius: 5px;
+}
+
+input[type="submit"]{
+    margin-top: 20px;
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    color: black;
+    background-color: rgb(192, 192, 192);
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+input[type="submit"]:hover{
+    background-color: transparent;
+    color: rgb(192, 192, 192);
+}
+
+.forgot-reset{
+    font-size: 17px;
+    color: rgb(192, 192, 192);
+    cursor: pointer;
+}
+
+.forgot-reset:hover{
+    color: rgb(192, 192, 192);
+}
+
+.forgot-reset::after {
+    content: "Forgot Password?";
+}
+  
+.forgot-reset:hover::after {
+    content: "Reset Password?";
+}
+
+.about{
+    margin-top: 70px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: rgb(192, 192, 192);
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.715);
+    cursor: pointer;
+}
+
+.explore{
+    margin-top: 30px;
+}
+
+.explore-free{
+    color: rgb(226, 226, 226);
+}
+
+.explore-button{
+    font-size: 18px;
+    color: black;
+    padding: 7px;
+    background-color: rgb(192, 192, 192);
+    border-radius: 5px;
+}
+
+.explore-button:hover{
+    background-color: transparent;
+    color: rgb(192, 192, 192);
+}
+
+.about-title{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(192, 192, 192);
+}
+
+#about{
+    background-color: rgba(0, 0, 0, 0.715);
+    margin-top: 50px;
+    border-radius: 20px;
+}
+
+#about-text{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    text-indent: 2em;
+    font-size: 18px;
+    color: rgb(192, 192, 192);
+}
+
+ul{
+    text-indent: 0em !important;
+}
+
+.close{
+    display: inline-block; 
+    font-size: 30px;
+    color: rgb(192, 192, 192);
+    position: relative;
+    padding-top: 10px;
+    top: 0;
+    right: 0;
+}
+
+.close:hover{
+    color: rgb(221, 221, 221);
+    cursor: pointer;
+}
+
+.signup{
+    text-decoration: none;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(192, 192, 192);
+}
+
+.signup:hover{
+    background-color: transparent;
+    color: rgb(192, 192, 192);
+    cursor: pointer;
+}
+
+.login{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newuser{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    justify-content: center;
+}
+
+.eye{
+    padding: 10px;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color:rgb(192, 192, 192);
+}
+
+.eye:hover{
+    color:rgb(192, 192, 192);
+    cursor: pointer;
+}
+
+#login{
+    font-size: 20px;
+    display: inline-block;
+    color: rgb(192, 192, 192);
+}
+
+.gotoLogin{
+    font-size: 20px;
+    color: rgb(192, 192, 192);
+    cursor: pointer;
+}
+
+.margin{
+    padding-top: 40px;
+}
+
+.logged-in-as{
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(192, 192, 192);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+}
+
+.navbarhome, .navbarlist, .navbarrecc, .navbarlogout, .navbarlogin{
+    padding: 10px;
+    color: rgb(192, 192, 192);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.715);
+}
+
+.navbarhome{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.navbarlist{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.navbarlogout{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.navbarlogin
+{
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.navbarhome:hover, .navbarlist:hover, .navbarrecc:hover, .navbarlogout:hover , .navbarlogin:hover{
+    background-color: rgb(192, 192, 192);
+    color: black;
+}
+
+.underline{
+    height: 2px;
+    margin-right: 5px;
+    background-color: rgb(192, 192, 192);
+    border-radius: 5px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.715);
+    border-radius: 30px;
+    width: 60vw;
+    cursor: pointer;
+}
+
+.searchIcon{
+    margin-right: 0px;
+    font-size: 30px;
+    padding: 10px;
+    padding-right: 15px;
+    color: rgba(0, 0, 0);
+    background-blend-mode: overlay;
+    background-color: rgb(192, 192, 192);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.searchIcon:hover{
+    background-color: transparent;
+    color: rgb(192, 192, 192);
+}
+
+.searchInput{
+    flex: 1;
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: rgb(192, 192, 192);
+}
+
+.searchInput:focus{
+    color: black;
+    border-radius: 30px;
+    background-color: rgb(192, 192, 192);
+}
+
+.Google-Signin{
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.google{
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(192, 192, 192);
+    border-radius: 10px;
+    color: rgb(192, 192, 192);
+}
+
+.google:hover{
+    background-color: rgb(192, 192, 192);
+    color: black;
+}
+
+.oogle{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.password-box{
+    margin-top: 2px;
+    margin-left: 5px;
+    margin-right: -5px !important;
+    padding-right: 5px;
+    display: flex;
+    align-items: center;
+    color: rgb(192, 192, 192);
+    border-bottom: 2px solid rgb(192, 192, 192);
+}
+
+.password-box-alt{
+    margin-top: 2px;
+    margin-left: 5px;
+    margin-right: -5px !important;
+    padding-right: 7px;
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(192, 192, 192);
+    background-color: rgb(192, 192, 192);
+    border-radius: 5px;
+}
+
+.password{
+    font-size: 20px;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;       
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: rgb(192, 192, 192);
+}
+
+.password-alt{
+    font-size: 20px;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;       
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+}
+
+.view{
+    cursor: pointer;
+}
+
+.signup-error{
+    display: flex;
+    align-items: center;
+}
+
+.error{
+    color: red;
+}
+
+.success{
+    color: green;
+}
+
+.display{
+    color:rgb(192, 192, 192);
+}
+
+.reset{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color:rgb(192, 192, 192);
+}
+
+.refresh{
+    padding: 5px;
+    color: black;
+    background-color: rgb(192, 192, 192);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.refresh:hover{
+    background-color: transparent;
+    color:rgb(192, 192, 192);
+}
+
+.goto-login-block{
+    margin-top: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.goto-login{
+    display: block;
+    font-size:20px;
+    font-weight: bold;
+    color: rgb(192, 192, 192);
+}
+
+.genres{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+  
+.genre{
+    position: relative;
+    width: 200px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.715);
+    border-radius: 5px;
+    margin: 20px;
+    cursor: pointer;
+}
+.genre:hover{
+    width: 240px;
+    height: 135px;
+    margin: 0px;
+}
+
+.genre-title{
+    position:absolute;
+    top: 0;
+    left: 0;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 5px;
+    color: rgb(192, 192, 192);
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+}
+
+.genre-page{
+    margin: 30px;
+    color: rgb(192, 192, 192);
+}
+
+.genre-page-title{
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5),0px 0px 30px rgba(0, 0, 0, 1);
+    color: rgb(192, 192, 192);
+}
+
+.searchMovieInput{
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.715);
+    color: rgb(192, 192, 192);
+    padding: 0px 20px 0px 20px;
+    border-radius: 40px;
+    width: 500px;
+}
+
+.searchMovieInput:focus{
+    color: black;
+    background-color: rgb(192, 192, 192);
+}
+
+.back{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.back:hover{
+    color: black;
+    background-color: rgb(192, 192, 192);
+    border-radius: 20px;
+}
+
+.movies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.movie-card{
+    height: 225px;
+    width: 150px;
+    margin: 20px;
+    background-size: cover;
+    background-position: center;
+    color: rgb(192, 192, 192);
+    background-color: rgba(0, 0, 0, 0.715);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.movie-card:hover{
+    height: 255px;
+    width: 170px;
+    margin: 0px 10px 0px 10px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.prev, .next{
+    font-size: 40px;
+    color: black;
+    background-color: rgb(192, 192, 192);
+    border-radius: 40px;
+    cursor: pointer;
+}
+.prev:hover, .next:hover{
+    color: rgb(192, 192, 192);
+    background-color: black;
+}
+
+.movie-name{
+    font-weight: bold;
+    padding: 10px;
+}
+
+.movie-page{
+    margin: 40px;
+    position: relative;
+    background-color: black;
+    border-radius: 10px;
+    padding-bottom: 40px;
+}
+
+.back-drop{
+    border-radius: 10px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%);
+   -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
+}
+
+.poster{
+    position: absolute;
+    width: 20%;
+    left: 40%;
+    top: 400px;
+}
+
+.details{
+    margin-top: 80px;
+}
+
+.title {
+    padding: 10px;
+    color: rgb(192, 192, 192);
+    font-size: 24px;
+  }
+
+.overview{
+    color: rgb(192, 192, 192);
+    padding: 30px 20px 0px 20px;
+}
+
+.loading{
+    margin-top: 100px;
+    font-size: 30px;
+    justify-content: center;
+}
+
+.load{
+    padding: 10px;
+    color: rgb(192, 192, 192);
+    background-color: rgba(0, 0, 0, 0.715);
+    border-radius: 20px;
+}
+
+.loading-backdrop {
+    --width: 100%;
+    width: var(--width);
+  }
+
+.cast-details{
+    color: rgb(192, 192, 192);
+    margin: 10px 20px 10px 20px;
+    padding-bottom: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.cast-details::-webkit-scrollbar{
+    width: 3px;
+    height: 5px;
+}
+
+.cast-details::-webkit-scrollbar-thumb {
+    background: rgb(192, 192, 192);/* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners of the scrollbar thumb */
+    cursor: pointer;
+  }
+
+.actor{
+    display: inline-block;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.production{
+    color: rgb(192, 192, 192);
+    margin: 10px 20px -10px 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.company{
+    display: inline-block;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.actor-image{
+    height: 150px;
+    border-radius: 5px;
+}
+
+.company-logo{
+    padding: 10px;
+    background-color: white;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.production::-webkit-scrollbar{
+    width: 3px;
+    height: 5px;
+}
+
+.production::-webkit-scrollbar-thumb {
+    background: rgb(192, 192, 192);/* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners of the scrollbar thumb */
+    cursor: pointer;
+  }
+
+.go-back{
+    font-size: 30px;
+    color: rgb(192, 192, 192);
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: -30px;
+}
+
+.go-back:hover{
+    color: black;
+    background-color: rgb(192, 192, 192);
+}
+
+.from{
+    border-radius: 10px;
+    margin: 10px;
+    height: 200px;
+}
+
+.sub-details{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.home-page{
+    color: rgb(192, 192, 192);
+    text-decoration: none;
+}
+
+.home-page:hover{
+    color: rgb(192, 192, 192);
+}
+
+.add-movie{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgb(192, 192, 192);
+    z-index: 1;
+    margin: 10px;
+    font-size: 40px;
+    border-radius: 20px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.add-movie:hover{
+    color: black;
+    background-color: rgb(192, 192, 192);
+}
+
+.added-movie{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: black;
+    z-index: 1;
+    margin: 10px;
+    font-size: 30px;
+    border-radius: 30px;
+    background-color: rgb(192, 192, 192);
+    cursor: pointer;
+    padding: 7px;
+}
+
+.added-movie:hover{
+    background-color: black;
+    color: rgb(192, 192, 192);
+}
+
+.scroll{
+    overflow-x:scroll;
+}
+
+.recs {
+    display: inline-flex;
+    color: rgb(192, 192, 192);
+    margin: 10px 20px 10px 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+.no-movie-found{
+    margin-top: 30px;
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.715);
+    color: rgb(192, 192, 192);
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+  @media screen and (max-width: 1400px) {
+    .poster {
+      width: 20%;
+      top: 300px;
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .poster {
+      width: 20%;
+      top: 250px;
+    }
+  }
+
+  @media screen and (max-width: 770px) {
+    .poster {
+      width: 25%;
+      left: 35%;
+      top: 150px;
+    }
+  }
+
+  
